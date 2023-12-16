@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page - Tazkia</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="background-color:#73101E">
+ 
+      <div class="container my-5 mx-5 ml-5 main">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid p-3 mx-md-3">
+            <div class="navbar-brand">
+              <img id="logo" src="../img/flower-pic.svg" alt="Logo" width="40" height="40" class="d-inline-block align-top">
+              Welcome
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="landing.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutme.html">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <div class="row p-2 m-3">
+
+          <!-- Welcome & form login -->
+            <div class="col-lg-6 col-md-8 pt-md-2 pb-md-3 welcome">
+              <div class="card py-md-3 px-md-3" style="width: 95%;">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Welcome to Our Landing Page</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">Please log in to access other features</h6>
+                  <form id="formLogin" novalidate>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Username</label>
+                      <input type="text" class="form-control" id="nama" aria-describedby="emailHelp">
+                      <p id="pesanNama" class="pesanError"></p>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password">
+                      <p id="pesanPassword" class="pesanError" style="margin-top:5px"></p>
+                      <p id="reminderCapslock" class="pesanError"></p>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input type="checkbox" class="form-check-input" id="showPassword">
+                      <label class="form-check-label" for="showPassword">Show Password</label>
+                      <br/>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btnsubmit">Submit</button>
+                  </form>
+                </div>
+              </div>              
+            
+            </div>
+
+            <!-- Img & quotes -->
+            <div class="col-lg-6 col-md-4 text-center pt-3 pb-4 quote">
+              <figure>
+                  <img id="flower" src="../img/flower-pic.svg" alt="flower">
+              </figure>
+              <p id="quote"><i>
+                  As far as we can discern, the sole purpose of human existence is to kindle
+                  a light in the darkness of mere being. <br/> - Carl Gustav Jung
+              </i></p>
+            </div>
+            
+
+        </div>
+
+        <footer class="row">
+              <p style="color:#AB3C41">&copy; 2023 BTJ Academy</p>
+        </footer>
+  
+
+      </div>
+
+
+    <script src="../script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
