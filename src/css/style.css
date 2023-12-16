@@ -20,10 +20,7 @@
     border-radius: 15px;
 }
 
-.navbar-brand{
-    color:var(--secondary-color) !important;
-}
-
+.navbar-brand,
 .nav-link{
     color:var(--secondary-color) !important;
 }
@@ -42,10 +39,9 @@
     border: 0px;
 }
 
-/* .nav-link.active  {
+.nav-link.active  {
     color: var(--main-text-color) !important;
-    border-top: 2px solid var(--secondary-color) !important;
-} */
+} 
 
 
 /* background color */
@@ -166,6 +162,10 @@ mark {
     transition: opacity 1s;
 }
 
+#myphoto:hover {
+    transform: scale(1.02);
+}
+
 
 .btn.btn-primary a,
 .btn.btn-primary a:hover,
@@ -187,6 +187,11 @@ mark {
     margin: 0px;
 }
 
+#mottoText:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+}
+
 /* Edu */
 
 .bg-red {
@@ -195,6 +200,12 @@ mark {
 
 .icon {
     width: 30%;
+}
+
+.cardEdu:hover {
+    box-shadow: 0 0 8px rgba(77, 0, 0, 0.7);
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
 }
 
 /* Work */
